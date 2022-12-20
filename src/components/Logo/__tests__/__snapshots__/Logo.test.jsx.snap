@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ <Logo> inherit:className 1`] = `
+<DocumentFragment>
+  <div
+    class="view row mirai"
+  >
+    <h2
+      class="text bold headline-2"
+    >
+      mirai
+    </h2>
+    <h2
+      class="text headline-2"
+    >
+      metasearch
+    </h2>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`components/ <Logo> prop:highlight 1`] = `
+<DocumentFragment>
+  <div
+    class="view row"
+  >
+    <h3
+      class="text bold headline-3"
+    >
+      mirai
+    </h3>
+    <h3
+      class="text headline-3"
+    >
+      metasearch
+    </h3>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`components/ <Logo> renders 1`] = `
+<DocumentFragment>
+  <div
+    class="view row"
+  >
+    <h2
+      class="text bold headline-2"
+    >
+      mirai
+    </h2>
+    <h2
+      class="text headline-2"
+    >
+      metasearch
+    </h2>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`components/ <Logo> testID 1`] = `
+<DocumentFragment>
+  <div
+    class="view row"
+    data-testid="mirai"
+  >
+    <h2
+      class="text bold headline-2"
+    >
+      mirai
+    </h2>
+    <h2
+      class="text headline-2"
+    >
+      metasearch
+    </h2>
+  </div>
+</DocumentFragment>
+`;

@@ -1,0 +1,62 @@
+{
+  "name": "work-shifts",
+  "version": "0.1.0",
+  "repository": "",
+  "source": "src/index.html",
+  "author": "Mario Rivero",
+  "license": "MIT",
+  "scripts": {
+    "setup": "rm -rf node_modules && rm -rf yarn.lock && yarn install --force",
+    "build": "rm -rf dist && parcel build src/index.html --no-cache --dist-dir dist --no-source-maps --no-autoinstall --detailed-report",
+    "build:dev": "rm -rf dist && NODE_ENV=development parcel build src/index.html --no-cache --dist-dir dist",
+    "start": "parcel src/index.html --no-cache --dist-dir build --port 8080 --host localhost --open",
+    "serve": "serve dist",
+    "serve:dev": "serve build",
+    "lint": "eslint --cache --fix --format codeframe --ext .jsx,.js src",
+    "test": "node scripts/test.js --watchAll=false",
+    "test:watch": "node scripts/test.js",
+    "test:e2e": "yarn playwright test",
+    "test:e2e:recorder": "yarn playwright codegen",
+    "test:e2e:report": "yarn playwright show-report",
+    "pipeline": "yarn lint && yarn test && yarn build",
+    "pipeline:dev": "yarn lint && yarn test && yarn build:dev"
+  },
+  "dependencies": {
+    "@mirai/locale": "^0.2",
+    "@mirai/ui": "^1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.3.1",
+    "wouter": "^2.8.1"
+  },
+  "devDependencies": {
+    "@mirai/eslint": "^0.1",
+    "@playwright/test": "^1.27.1",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/react-hooks": "^7.0.2",
+    "jest-fetch-mock": "^3.0.3",
+    "parcel": "^2.7.0",
+    "postcss": "^8.0.0",
+    "postcss-modules": "^4.3.0",
+    "process": "^0.11.10",
+    "react-scripts": "5.0.0",
+    "serve": "^14.0.1"
+  },
+  "engines": {
+    "node": ">=16.15.0"
+  },
+  "resolutions": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "alias": {
+    "@*": "./src/$1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@components$": "<rootDir>/src/components",
+      "^@services$": "<rootDir>/src/services"
+    }
+  }
+}

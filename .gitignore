@@ -1,0 +1,13 @@
+/build
+/coverage
+/dist
+/node_modules
+/playwright-report
+
+# misc
+.DS_Store
+.eslintcache
+.parcel-cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

@@ -1,0 +1,124 @@
+:root {
+  --mirai-metasearch-menu-padding: var(--mirai-ui-space-L);
+  --mirai-metasearch-menu-avatar-size: calc(var(--mirai-ui-space-L) + var(--mirai-ui-space-S));
+  --mirai-metesearch-menu-icon-size: 24px;
+}
+
+.container {
+  align-items: stretch;
+  background-color: var(--mirai-ui-content-background);
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu {
+  align-items: stretch;
+  background-color: var(--mirai-ui-content-dark);
+  position: relative;
+  width: 320px;
+  padding: calc(var(--mirai-metasearch-menu-padding) / 2);
+  transition: width var(--mirai-ui-motion-collapse) var(--mirai-ui-motion-easing);
+}
+
+.menu.compact {
+  width: 72px;
+}
+
+.menu.compact .link .text:not(.icon) {
+  display: none;
+}
+
+.menu.compact .link .icon {
+  margin-right: 0;
+}
+
+.menu .text {
+  color: var(--mirai-ui-base);
+}
+
+.menu .header {
+  margin: calc(var(--mirai-metasearch-menu-padding) / 2);
+  height: 24px;
+}
+
+.menu .header .icon {
+  border-radius: 50%;
+  height: var(--mirai-ui-space-L);
+  width: var(--mirai-ui-space-L);
+  margin-right: var(--mirai-ui-space-S);
+  background-color: var(--mirai-ui-content-light);
+}
+
+.menu .header .button {
+  background-color: var(--mirai-ui-content-dark);
+}
+
+.menu .link {
+  align-items: center;
+  border-radius: var(--mirai-ui-border-radius);
+  display: flex;
+  flex-direction: row;
+  padding: calc(var(--mirai-metasearch-menu-padding) / 2);
+  width: 100%;
+}
+
+.menu .link:hover,
+.menu .link.active {
+  background-color: var(--mirai-ui-content);
+}
+
+.menu .link .icon {
+  font-size: 24px;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  margin-right: calc(var(--mirai-metasearch-menu-padding) / 2);
+}
+
+.menu .navigation {
+  flex: 1;
+  margin: var(--mirai-metasearch-menu-padding) 0;
+}
+
+.menu .navigation .link {
+  margin-bottom: calc(var(--mirai-metasearch-menu-padding) / 2);
+}
+
+.menu .navigation .link .text {
+  color: var(--mirai-ui-content-light);
+}
+
+.menu .navigation .link.active .text {
+  color: var(--mirai-ui-base);
+}
+
+.menu .session {
+}
+
+.menu .session .avatar {
+  background-color: var(--mirai-ui-content-light);
+  background-image: url('https://avatars.githubusercontent.com/u/559654?s=400&u=d88315e4bf63ab5f23ee18d011036b8a30114098&v=4');
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 0 6px var(--mirai-ui-content-dark), 0 0 0 7px var(--mirai-ui-content);
+  height: var(--mirai-metasearch-menu-avatar-size);
+  margin-right: calc(var(--mirai-metasearch-menu-padding) / 2);
+  width: var(--mirai-metasearch-menu-avatar-size);
+}
+
+.article {
+  background-color: var(--mirai-ui-content-background);
+  width: 100%;
+}
+
+.article .header {
+  width: 100%;
+  color: var(--mirai-ui-base);
+  background-color: var(--mirai-ui-base);
+  height: var(--mirai-ui-space-XXL);
+  padding: 0 var(--mirai-metasearch-menu-padding);
+}
+
+.article .content {
+  padding: var(--mirai-metasearch-menu-padding);
+}

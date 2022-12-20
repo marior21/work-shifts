@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`components/ <Action> extending properties from <Text> 1`] = `
+<DocumentFragment>
+  <button
+    class="pressable"
+    type="button"
+  >
+    <span
+      class="text small"
+      data-testid=""
+    >
+      Lorem Ipsum...
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components/ <Action> inherit:className 1`] = `
+<DocumentFragment>
+  <button
+    class="pressable mirai"
+    type="button"
+  >
+    <span
+      class="text paragraph mirai"
+      data-testid=""
+    >
+      Lorem Ipsum...
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components/ <Action> prop:button 1`] = `
+<DocumentFragment>
+  <button
+    class="pressable"
+    type="button"
+  >
+    <span
+      class="text paragraph"
+      data-testid=""
+    >
+      Lorem Ipsum...
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components/ <Action> renders 1`] = `
+<DocumentFragment>
+  <button
+    class="pressable"
+    type="button"
+  >
+    <span
+      class="text paragraph"
+      data-testid=""
+    >
+      Lorem Ipsum...
+    </span>
+  </button>
+</DocumentFragment>
+`;
+
+exports[`components/ <Action> testID 1`] = `
+<DocumentFragment>
+  <button
+    class="pressable"
+    data-testid="mirai"
+    type="button"
+  >
+    <span
+      class="text paragraph"
+      data-testid=""
+    >
+      Lorem Ipsum...
+    </span>
+  </button>
+</DocumentFragment>
+`;

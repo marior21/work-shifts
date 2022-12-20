@@ -1,0 +1,19 @@
+.mirai {
+  color: var(--mirai-ui-accent);
+}
+
+.metasearch {
+  color: var(--mirai-ui-content-light);
+}
+
+.highlight {
+  color: var(--mirai-ui-base);
+}
+
+.icon {
+  background-color: var(--mirai-ui-accent);
+  border-radius: 50%;
+  height: var(--mirai-ui-space-L);
+  margin-right: var(--mirai-ui-space-XS);
+  width: var(--mirai-ui-space-L);
+}
